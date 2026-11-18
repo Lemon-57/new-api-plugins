@@ -11,6 +11,7 @@ locale: zh-CN
 - 密钥填 TypeSafe 的 API Key，详见 [TypeSafe API 文档](https://docs.typesafe.ai/api)。
 - API 地址留空时使用 `https://api.typesafe.ai`。地址末尾带 `/v1` 也可以。
 - 如果上游是另一台 New API 网关，渠道类型选 New API (60)，填写该网关的地址和它的令牌。上游网关也需要安装 TypeSafe 插件。
+- 从插件 1.2.1 起，兼容 System One 的上游可以使用不同的模型名。填写上游的 API 地址和密钥，再通过渠道的模型重定向将下表中的 Jev 模型名映射到上游模型名。客户端仍发送下表中的模型名，网关按该名称配置的价格计费。
 
 ## 模型与接口
 

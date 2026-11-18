@@ -12,6 +12,7 @@ Answers typed questions about text, data or images with TypeSafe System One and 
 - The key is a TypeSafe API key. See the [TypeSafe API docs](https://docs.typesafe.ai/api).
 - Leave the API address empty to use `https://api.typesafe.ai`. An address ending in `/v1` also works.
 - To use another New API gateway as the upstream, choose New API (60) and enter that gateway's address and one of its tokens. That gateway needs the TypeSafe plugin too.
+- Starting with plugin version 1.2.1, a System One-compatible upstream can use a different model name. Set its API address and key on the channel, then map a listed Jev model to the upstream's model name. Clients still send the listed Jev name, and the gateway uses its configured price.
 
 ## Models and endpoints
 
